@@ -1,0 +1,31 @@
+{
+  "name": "oauth-jwt",
+  "version": "1.0.0",
+  "description": "Fast and reliable OAuth providers for GitHub and Google with Express.js",
+  "main": "index.js",
+  "type": "module",
+  "keywords": [
+    "oauth",
+    "github",
+    "google",
+    "express",
+    "authentication",
+    "login"
+  ],
+  "author": "RajanDhamala lucarioqh5@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RajanDhamala/oauth-jwt.git"
+  },
+  "bugs": {
+    "url": "https://github.com/RajanDhamala/oauth-jwt/issues"
+  },
+  "homepage": "https://github.com/RajanDhamala/oauth-jwt#readme",
+  "peerDependencies": {
+    "express": "^4.0.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
