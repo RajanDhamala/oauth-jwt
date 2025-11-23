@@ -1,12 +1,11 @@
 const GithubProvider = async (app, clientId, clientSecret, redirectUrl, onSuccess, onError) => {
   app.get("/auth/github", async (req, res) => {
-    console.log("github provider called");
+
     const redirectUrl = `https://github.com/login/oauth/authorize?client_id=${clientId}&redirect_uri=${redirectUrl}&scope=user:email`;
     res.redirect(redirectUrl);
   });
 
   app.get("/auth/github/callback", async (req, res) => {
-    console.log("github callback called");
     const { code } = req.query;
     if (!code) return res.status(400).send("No code provided");
 
@@ -69,7 +68,6 @@ const GithubProvider = async (app, clientId, clientSecret, redirectUrl, onSucces
 
 const GoogleProvider = async (app, clientId, clientSecret, redirectUrl, onSuccess, onError) => {
   app.get("/auth/google", async (req, res) => {
-    console.log("google provider called");
     const scope = encodeURIComponent("profile email");
     const redirectUrl = `https://accounts.google.com/o/oauth2/v2/auth?client_id=${clientId}&redirect_uri=${redirectUrl}&response_type=code&scope=${scope}&access_type=offline&prompt=consent`;
     res.redirect(redirectUrl);
@@ -79,7 +77,6 @@ const GoogleProvider = async (app, clientId, clientSecret, redirectUrl, onSucces
     const { code } = req.query;
     if (!code) return res.status(400).send("No code provided");
 
-    console.log("google callback called");
     try {
       const tokenRes = await fetch("https://oauth2.googleapis.com/token", {
         method: "POST",

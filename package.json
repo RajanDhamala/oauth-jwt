@@ -1,6 +1,6 @@
 {
   "name": "oauth-jwt",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Fast and reliable OAuth providers for GitHub and Google with Express.js",
   "main": "index.js",
   "type": "module",
@@ -22,9 +22,6 @@
     "url": "https://github.com/RajanDhamala/oauth-jwt/issues"
   },
   "homepage": "https://github.com/RajanDhamala/oauth-jwt#readme",
-  "peerDependencies": {
-    "express": "^4.0.0"
-  },
   "engines": {
     "node": ">=14.0.0"
   }
