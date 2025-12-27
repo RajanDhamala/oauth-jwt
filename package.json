@@ -10,7 +10,8 @@
     "google",
     "express",
     "authentication",
-    "login"
+    "login",
+    "crypto"
   ],
   "author": "RajanDhamala lucarioqh5@gmail.com>",
   "license": "MIT",
