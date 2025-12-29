@@ -36,7 +36,7 @@ import express from 'express';
 import { GithubProvider } from 'oauth-jwt';
 
 const app = express();
-
+```
 # OAuth JWT
 
 Lightning-fast GitHub & Google OAuth helpers for Express with zero extra dependencies.
@@ -208,9 +208,9 @@ await GoogleProvider(app, clientId, clientSecret, redirectUrl, onSuccess, onErro
 - Email: lucarioqh5@gmail.com
 
 ## License
-
-MIT © 2024 Rajan Dhamala
 ```
+This project is licensed under the MIT License.
 
+MIT © 2026 Rajan Dhamala
 
 
