@@ -19,32 +19,11 @@
 npm install oauth-jwt
 ```
 
-
 ##  Import Statement
 
 ```javascript
 import express from 'express';
 import { GithubProvider, GoogleProvider } from 'oauth-jwt';
-```
-
-##  Quick Start Guide
-
-### Step 1: Basic Provider Setup
-
-```javascript
-import express from 'express';
-import { GithubProvider } from 'oauth-jwt';
-
-const app = express();
-```
-# OAuth JWT
-
-Lightning-fast GitHub & Google OAuth helpers for Express with zero extra dependencies.
-
-## Install
-
-```bash
-npm install oauth-jwt
 ```
 
 ## Quick start
